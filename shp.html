@@ -5,6 +5,7 @@
 <meta content = "" name = "description">
 <meta content = "" name = "keyword">
 <meta charset="utf=8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="st.css">
 </head>
 <body>
@@ -18,9 +19,9 @@
 	<img src = "15781127_648337015339301_6246359596553536564_n.jpg"	alt= "sh" width="250" height="250"/>
     </span>
      <span class = "d">
-    	<img src="https://cdn3.iconfinder.com/data/icons/letters-and-numbers-1/32/letter_D_blue-256.png" alt="c" width="250" height="250"/>
-    	</span>
-    	<span class = "e">
+    <img src="https://cdn3.iconfinder.com/data/icons/letters-and-numbers-1/32/letter_D_blue-256.png" alt="c" width="250" height="250"/>
+    </span>
+    <span class = "e">
      <img src="https://cdn3.iconfinder.com/data/icons/letters-and-numbers-1/32/letter_E_red-256.png" alt="e"
      width="250" height="250" />
      </span>
@@ -82,14 +83,23 @@
     <p>
     <button class="send">Send</button>
     </p>
+    </div>
+   <h2>Follow Format</h2>
 
-           <script type="text/javascript">
+            <script type="text/javascript">
             function ran_col() { 
             var color = '#'; 
             var letters = ['000000','FF0000','00FF00','0000FF','FFFF00','00FFFF','FF00FF','C0C0C0'];
             color += letters[Math.floor(Math.random() * letters.length)];
-            document.getElementById('h1').style.background = color; 
+            document.getElementById('.body').style.background = color; 
             }
             </script>
+            <script>
+            var today = new Date();
+            var year = today.getFullYear();
+            document.write('<p> <center> Copyright &copy;' +year+ '</center></p>');
+            </script>
+<footer>
+	</footer>
 </body>
 </html>
