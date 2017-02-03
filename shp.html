@@ -70,19 +70,28 @@
 		<p id = "unix">$echo <u>Unix & shell script</u></p>
 		<p id = "java">system.out.println(<u>"J2SE"</u>)</p>
 	</div>
+    <div class = "s">
     <div class = "contact">
-    <h2>Contact Me</h2>
+    <img src="https://cdn2.iconfinder.com/data/icons/business-271/135/19-128.png" alt="con" width="30" height="30"/>
+    <h2><font color="#90caf9">Contact Me</font></h2>
     <p>
-    <label class = "name" ><b>Name:</b></label>
+    <label id = "name" ><font color="#ff8a65"><b>Name:</b></font></label>
     </p>
-    <input class = "nam" name="first" type="text">
+    <input id = "nam"><name="first" type="text" width="100" height="25">
     <p>
-    <label class = "email"><b>Email:</b></label>
+    <label id = "name"><font color="#ff8a65"><b>Email:</b></font></label>
     </p>
-    <input class = "emai" name="email" type="text">
+    <input id= "nam"> <name="email" type="text">
     <p>
     <button class="send">Send</button>
     </p>
+    </div>
+      <div class= "phone">
+    <p>+91 9057451337</p>
+    <address>
+        Jaipur,India
+    </address>
+    </div>
     </div>
     <div class="follow">
     <img src="https://cdn4.iconfinder.com/data/icons/chat-icons-2-1/128/follow.png" alt="foll" width="30" height="30"/>
@@ -100,7 +109,7 @@
             function ran_col() { 
             var color = '#'; 
             var letters = ['000000','FF0000','00FF00','0000FF','FFFF00','00FFFF','FF00FF','C0C0C0'];
-            color += letters[Math.floor(Math.random()*letters.length)];
+            color +=letters[Math.floor(Math.random()*letters.length)];
             document.getElementsByClassName('follow').style.background = color; 
             }
             </script>
