@@ -1,6 +1,7 @@
 body{
 	background-color: black;
     font-family: "Comic Sans MS", cursive, sans-serif;
+
 	}
 h1, h4{
 	 color: #d50000 ;
@@ -38,7 +39,7 @@ h4{
 .about
 {
 	color: white;
-	float:left;
+	float:left;raees
 	margin:10px 10px 0 0 ;
     position: relative;
 
@@ -53,7 +54,7 @@ h4{
 .qualification img
 {
     float: left;
-    margin: 8px 10px 1px 1px; ;
+    margin: 8px 10px 1px 1px; 
 }
 td, th {
     color: white;
@@ -69,8 +70,15 @@ table {
 .skills img
 {
     float: left;
-    margin: 2px 10px 1px 1px; ;
+    margin: 2px 10px 1px 1px; 
     position: relative;
+}
+.follow img
+{
+    float: left;
+    margin: 2px 10px 3px 1px; 
+    position: relative;
+
 }
 .container
 {
@@ -256,4 +264,6 @@ table {
         background: #4a148c ; 
     }
 }
-
+.copy{
+    font-size: 13px;
+}
