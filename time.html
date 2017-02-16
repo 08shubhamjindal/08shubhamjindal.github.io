@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Time</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+</head>
+<body>
+	 <form id="tfnewsearchyoutube" method="get">
+     <input type="text" class="tftextinput" id="tftextinput" name="q" size="100" maxlength="120"><input type="submit" value="search" class="tfbutton">
+     </form>
+	</body>
+<script>
+var b = document.getElementById('tftextinput').value;
+if(document.getElementById('tftextinput').value==Montreal)
+{
+ window.DisplayCityTime();
+}
+</script>
+<script>
+function DisplayCityTime(city, offset) {
+    var aDate = new Date();
+    var utc = adate.getTime() + (adate.getTimezoneOffset() * 60000);
+    var newdate = new Date(utc + (3600000*offset));
+    return "The local time for city : "+ city +" is "+ newdate.toLocaleString();
+}
+alert(DisplayCityTime('Montreal', '-5'));
+</script>
+<script>
+function calcTime(city, offset) {
+    var d = new Date();
+    var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+    var nd = new Date(utc + (3600000*offset));
+    return "The local time for city"+ city +" is "+ nd.toLocaleString();
+}
+document.write(calcTime('Bombay', '+5.5'));
+</script>
+<script>
