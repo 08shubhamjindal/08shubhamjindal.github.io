@@ -9,11 +9,13 @@
      <input type="text" class="tftextinput" id="tftextinput" name="q" size="100" maxlength="120"><input type="submit" value="search" class="tfbutton">
      </form>
 	</body>
+    <script>
+ document.getElementById("tfbutton").addEventListener("click",DisplayCityTime);
+</script>
 <script>
-if(city==document.getElementById('tftextinput').value)
-{
-    if(city==Montreal)
+ if(document.getElementById('tftextinput').value==="Montreal")
     {
+        if(file:///home/realmadrid/dev/social-media/time.html?q=Montreal===file:///home/realmadrid/dev/social-media/time.html?q=document.getElementById('tftextinput').value)
    
 function DisplayCityTime(city, offset) {
     var aDate = new Date();
@@ -24,12 +26,13 @@ function DisplayCityTime(city, offset) {
 document.write(DisplayCityTime('Montreal', '-5'));
 
     }
-function calcTime(city, offset) {
+
+    function calcTime(city, offset) {
     var d = new Date();
     var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
     var nd = new Date(utc + (3600000*offset));
     return "The local time for city"+ city +" is "+ nd.toLocaleString();
-}
-document.write(calcTime('Bombay', '+5.5'));
-}
+                                     }
+    document.write(calcTime('Bombay', '+5.5'));
+
 </script>
