@@ -1,0 +1,84 @@
+body{
+    background-color: black;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    -webkit-animation: loader 16s steps(100) infinite;
+    -moz-animation: loader 16s steps(100) infinite;
+    -ms-animation: loader 16s steps(100) infinite;
+    -o-animation: loader 16s steps(100) infinite;
+    animation: loader 16s steps(100) infinite;
+}
+p{
+    font-size: 24px;
+    color: teal;
+}
+select
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 24px;
+}
+button
+{
+    background-color: teal; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+#f{
+    color: teal;
+    margin-bottom: 435px;
+}
+
+
+@-webkit-keyframes loader {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -1600px 0;
+  }
+}
+@-moz-keyframes loader {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -1600px 0;
+  }
+}
+@-ms-keyframes loader {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -1600px 0;
+  }
+}
+@-o-keyframes loader {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -1600px 0;
+  }
+}
+@keyframes loader {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -1600px 0;
+  }
+}
+

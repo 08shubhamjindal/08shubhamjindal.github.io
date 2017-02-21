@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>7up7down</title>
+<link rel="stylesheet" type="text/css" href="7.css">
+</head>
+<body>
+      <select id= "m" onChange="myFunction">
+      <option value="" disabled selected>Choose Your Option</option>
+      <option value="1">No--7</option>
+      <option value="2">7 Down</option>
+      <option value="3">7 Up</option>
+      </select>
+<center><p>Roll Your Dice</p></center>
+<center><button onclick="myFunction1()">ROLL</button></center>
+<p id="demo"></p>
+<script>
+function myFunction1() {
+    var value = 250;
+    var s = document.getElementById('m');
+    var sv = s.options[s.selectedIndex].value;
+    var x = Math.floor((Math.random() * 12) + 2);
+    document.getElementById("demo").innerHTML = x;
+
+if(sv==1)
+    {
+    	if(x==7){
+    		document.write("your no is seven<br/>");
+	        document.write("and your no is" + " " + x + "<br/>");
+	        document.write("you won<br/>");
+            value=value+25;
+            document.write("your total is" + value);   
+             }
+        if(x<7)
+        {
+        document.write("your no is less than seven<br/>");
+		document.write("and your no is" + " " + x + "<br/>");
+		document.write("you lose");
+        value=value-25;
+        document.write("your total is" + value);     
+          }        
+        if(x>7)
+        {
+        	document.write("your no is greater than seven<br/>");
+		document.write("and your no is" + " " + x + "<br/>");
+		document.write("you lose");
+        value=value-25;
+        document.write("your total is" + value); 
+        }
+        else{}
+    }
+if(sv==2)
+    {
+    if(x==7){
+    		document.write("your no is seven<br/>");
+	        document.write("and your no is" + " " + x + "<br/>");
+	        document.write("you lose");
+            value=value-25;
+            document.write("your total is" + value);  
+                }
+        if(x<7)
+        {document.write("your no is seven<br/>");
+            document.write("and your no is" + " " + x + "<br/>");
+            document.write("you won<br/>");
+            value=value+25;
+            document.write("your total is" + value);  
+        document.write("your no is less than seven<br/>");
+		document.write("and your no is" + " " + x + "<br/>");
+		document.write("you won");
+        value=value+25;
+        document.write("your total is" + value);
+        }        
+        if(x>7)
+        {
+        document.write("your no is greater than seven<br/>");
+		document.write("and your no is" + " " + x + "<br/>");
+		document.write("you lose");
+        value=value-25;
+        document.write("your total is" + value); 
+        }
+        else{}	
+    }
+if(sv==3)
+{
+	if(x==7){
+    		document.write("your no is seven<br/>");
+	        document.write("and your no is" + " " + x + "<br/>");
+	        document.write("you lose");
+            value=value-25;
+            document.write("your total is" + value);   
+                }
+        if(x<7)
+        {
+        document.write("your no is less than seven<br/>");
+		document.write("and your no is" + " " + x + "<br/>");
+		document.write("you lose");
+        value=value-25;
+        document.write("your total is" + value);  
+        }        
+        if(x>7)
+        {
+        	document.write("your no is greater than seven<br/>");
+		document.write("and your no is" + " " + x + "<br/>");
+		document.write("you won");
+        value=value+25;
+        document.write("your total is" + value);
+        }
+        else{}
+}
+else{}
+if(x==2)
+{
+document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_2-128.png" />');
+}
+if(x==3)
+{
+    document.write( '<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_3-128.png" />');
+}
+if(x==4)
+{
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_4-128.png" />');
+}
+if(x==5)
+{
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_5-128.png" />');
+}
+if(x==6)
+{
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+}
+if(x==7)
+{
+   document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_1-128.png" />');
+}
+if(x==8)
+{
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_4-128.png" />');
+   document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_4-128.png" />');
+}
+if(x==9)
+{
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_5-128.png" />');
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_4-128.png" />');
+}
+if(x==10)
+{
+document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_5-128.png" />');
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_5-128.png" />');
+}
+if(x==11)
+{
+   document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+  document.write( '<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_5-128.png" />');
+}
+if(x==12)
+{
+  document.write( '<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+  document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+}
+else
+{}
+}
+</script>
+      <select id= "m" onChange="myFunction">
+      <option value="" disabled selected>Choose Your Option</option>
+      <option value="1">No--10</option>
+      <option value="2">10 Down</option>
+      <option value="3">10 Up</option>
+  </select>
+      <center><p>Roll Your Dice</p></center>
+      <center><button onclick="myFunction2()">ROLL</button></center>
+      <p id="demo1"></p>
+<script>
+    function myFunction2() {
+    var value = 250;
+    var s = document.getElementById('m');
+    var sv = s.options[s.selectedIndex].value;
+    var x = Math.floor((Math.random() * 18) + 3);
+    document.getElementById("demo1").innerHTML = x;
+    if(sv==1)
+    {
+        if(x==10)
+        {
+            document.write("your no is seven<br/>");
+            document.write("and your no is" + " " + x + "<br/>");
+            document.write("you won<br/>");
+            value=value+25;
+            document.write("your total is" + value);  
+        }
+        if(x<10)
+            {
+                document.write("your no is seven<br/>");
+            document.write("and your no is" + " " + x + "<br/>");
+            document.write("you lose<br/>");
+            value=value-25;
+            document.write("your total is" + value);
+            }
+         if(x>10)
+         {
+            document.write("your no is seven<br/>");
+            document.write("and your no is" + " " + x + "<br/>");
+            document.write("you lose<br/>");
+            value=value-25;
+            document.write("your total is" + value);
+         }   
+         else{}
+    }
+if(sv==2)
+{
+    if(x==10)
+    {
+        document.write("your no is seven<br/>");
+            document.write("and your no is" + " " + x + "<br/>");
+            document.write("you lose<br/>");
+            value=value-25;
+            document.write("your total is" + value);
+    }
+    if(x<10)
+    {
+document.write("your no is seven<br/>");
+            document.write("and your no is" + " " + x + "<br/>");
+            document.write("you won<br/>");
+            value=value+25;
+            document.write("your total is" + value);
+    }
+    if(x>10)
+    {
+        document.write("your no is seven<br/>");
+            document.write("and your no is" + " " + x + "<br/>");
+            document.write("you lose<br/>");
+            value=value-25;
+            document.write("your total is" + value);
+    }
+    else{
+    }
+}
+if(sv==3)
+{
+    if(x==10)
+    {
+        document.write("your no is seven<br/>");
+            document.write("and your no is" + " " + x + "<br/>");
+            document.write("you lose<br/>");
+            value=value-25;
+            document.write("your total is" + value);
+    }
+    if(x<10)
+    {
+        document.write("your no is seven<br/>");
+            document.write("and your no is" + " " + x + "<br/>");
+            document.write("you lose<br/>");
+            value=value-25;
+            document.write("your total is" + value);
+    }
+    if(x>10)
+    {
+        document.write("your no is seven<br/>");
+            document.write("and your no is" + " " + x + "<br/>");
+            document.write("you won<br/>");
+            value=value+25;
+            document.write("your total is" + value);
+    }
+    else{}
+}
+else{}
+if(x==3)
+{
+    document.write( '<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_3-128.png" />');
+}
+if(x==4)
+{
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_4-128.png" />');
+}
+if(x==5)
+{
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_5-128.png" />');
+}
+if(x==6)
+{
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+}
+if(x==7)
+{
+   document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_1-128.png" />');
+}
+if(x==8)
+{
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_4-128.png" />');
+   document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_4-128.png" />');
+}
+if(x==9)
+{
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_5-128.png" />');
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_4-128.png" />');
+}
+if(x==10)
+{
+document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_5-128.png" />');
+document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_5-128.png" />');
+}
+if(x==11)
+{
+document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+document.write( '<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_5-128.png" />');
+}
+if(x==12)
+{
+document.write( '<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+}
+if(x==13)
+{
+document.write( '<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+document.write( '<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_1-128.png" />');
+}
+if(x==14)
+{
+    document.write( '<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+document.write( '<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_2-128.png" />');
+}
+if(x==15)
+{
+    document.write( '<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+document.write( '<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_3-128.png" />');
+}
+if(x==16)
+{
+    document.write( '<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+document.write( '<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_4-128.png" />');
+}
+if(x==17)
+{
+    document.write( '<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+document.write( '<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_5-128.png" />');
+}
+if(x==18)
+{
+    document.write( '<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+document.write( '<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+}
+else{}
+}
+</script>
+
+
+             <script>
+            var today = new Date();
+            var year = today.getFullYear();
+            document.write('<font color="teal"><p id="f"><center>&copy;'+year+'|&lt;SHUBHAM JINDAL&gt;</p></center></font>');
+            </script>
+</body>
+</html>
