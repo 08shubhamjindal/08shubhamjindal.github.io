@@ -8,17 +8,6 @@
    	<button onclick = "googleSignin()">Google Signin</button>
     <button onclick = "googleSignout()">Google Signout</button>
     <script>
-
-    var config = {
-    apiKey: "AIzaSyCwVipv75VqpU4SaVg5nE-938Q_wjSP_GQ",
-    authDomain: "chat-9b188.firebaseapp.com",
-    databaseURL: "https://chat-9b188.firebaseio.com",
-    storageBucket: "chat-9b188.appspot.com",
-    messagingSenderId: "64990406110"
-  };
-  firebase.initializeApp(config);
-</script>
-    <script>
     var provider = new firebase.auth.GoogleAuthProvider();
 
     function googleSignin() {
@@ -48,6 +37,18 @@ function googleSignout() {
    });
 }
     </script>
+      <script>
+
+    var config = {
+    apiKey: "AIzaSyCwVipv75VqpU4SaVg5nE-938Q_wjSP_GQ",
+    authDomain: "chat-9b188.firebaseapp.com",
+    databaseURL: "https://chat-9b188.firebaseio.com",
+    storageBucket: "chat-9b188.appspot.com",
+    messagingSenderId: "64990406110"
+  };
+  firebase.initializeApp(config);
+</script>
+
 
    </body>
 	</html>
