@@ -25,7 +25,17 @@
 </script>
    <button onclick = "facebookSignin()">Facebook Signin</button>
 <button onclick = "facebookSignout()">Facebook Signout</button>
-<script src="sign.js">
+<script src="sign.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+<script>
+  var config = {
+    apiKey: "AIzaSyCwVipv75VqpU4SaVg5nE-938Q_wjSP_GQ",
+    authDomain: "chat-9b188.firebaseapp.com",
+    databaseURL: "https://chat-9b188.firebaseio.com",
+    storageBucket: "chat-9b188.appspot.com",
+    messagingSenderId: "64990406110"
+  };
+  firebase.initializeApp(config);
 </script>
    </body>
 	</html>
