@@ -1,7 +1,7 @@
 <html>
    <head>
-   <script src = "https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
-      <link rel="manifest" href="manifest.json">
+  <script src = "https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+      <script type = "text/javascript" src = "sign.js"></script>
    </head>
 	<body>
   <script>
@@ -14,8 +14,7 @@
     });
     FB.AppEvents.logPageView();   
   };
-
-  (function(d, s, id){
+     (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
      if (d.getElementById(id)) {return;}
      js = d.createElement(s); js.id = id;
@@ -23,12 +22,11 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
-   <button onclick = "facebookSignin()">Facebook Signin</button>
+<button onclick = "facebookSignin()">Facebook Signin</button>
 <button onclick = "facebookSignout()">Facebook Signout</button>
-<script src="sign.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
 <script>
-  var config = {
+    var config = {
     apiKey: "AIzaSyCwVipv75VqpU4SaVg5nE-938Q_wjSP_GQ",
     authDomain: "chat-9b188.firebaseapp.com",
     databaseURL: "https://chat-9b188.firebaseio.com",
