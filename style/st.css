@@ -26,15 +26,15 @@ h4{
 .self .d img
 {
     float: right;
-    margin: -250px 400px 50px 50px ;
-    position: relative;
+    margin: -200px 400px 50px 50px ;
+    position: block;
 }
 .self .e img
 {
     float: left;
-    margin-top: -300px;
-    padding-left: 900px;
-    position: relative;
+    margin-top: -250px;
+    padding-left: 940px;
+    position: block;
 }
 .about
 {
