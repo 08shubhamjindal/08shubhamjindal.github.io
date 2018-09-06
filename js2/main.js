@@ -2,7 +2,7 @@ $(document).ready(function(){
   $('#searchUser').on('keyup', function(e){
     let username = e.target.value;
 
-    // Make request to Github
+   
     $.ajax({
         url:'https://api.github.com/users/'+username,
         data:{
@@ -41,14 +41,9 @@ $(document).ready(function(){
       });
       $('#profile').html(`
         <div class="card border-primary mb-3" style="max-width: 100rem;">
-        if(${user.name})
-        {
+   
        <div class="card-header"><h3>${user.name}</h3></div>
-     }
-     else
-     {
-       <div class="card-header"><h3>sssss</h3></div>
-     }
+   
          <div class="card-body">
             <div class="row">
             <div class="col-md-3">
