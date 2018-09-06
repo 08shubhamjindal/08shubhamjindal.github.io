@@ -1,0 +1,89 @@
+html, body {
+  height:100%;
+  background-color: #666699;
+}
+
+h3 {
+  text-align:center;
+  color:#fff;
+  margin: 0 0 20px;
+}
+
+.well {
+  background-color: #ffffee
+}
+
+.well:hover {
+  border-left: 4px solid black;
+}
+
+#content {
+  padding: 15% 25% 5%;  
+}
+
+.search-form {
+  border-radius: 30px 0 0 30px;
+}
+
+.input-group {
+  width:100%;
+  margin: 0 auto;
+}
+
+#search {
+  border: 1px;
+}
+
+.search-btn {
+  cursor:pointer;
+  border-radius: 0 30px 30px 0; 
+  background-color:#fff;
+  color:#669;
+}
+
+p {
+  margin: 10px 0 50px 0;
+  text-align:center;
+}
+
+#results {
+  margin: 0 0 5% 0;
+}
+
+
+
+
+footer {
+  height:2em;
+  bottom:0;
+  padding: 5% 10% 0;
+  left:0;
+  right:0;
+  position: relative;
+  color:#fff
+  
+}
+
+a {
+  color:#fff;
+}
+
+a div {
+  color:#000;
+}
+
+a:hover {
+  text-decoration:none;
+  color:#fff;
+}
+
+a:visited {
+  color:#fff;
+  text-decoration:none;
+}
+
+h2 {
+  margin-top: 5px;
+}
+
+
