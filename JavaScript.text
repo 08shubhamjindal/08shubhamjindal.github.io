@@ -1,7 +1,43 @@
 What is Event Loop
 What is Promise
 What is Settimeout
-What is Function Prototype
+
+---------------------------------------------------------------
+" What is Function Prototype
+Ans:  
+<script>
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+Person.prototype.nationality = "English";
+
+var myFather = new Person("John", "Doe", 50, "blue");
+document.getElementById("demo").innerHTML =
+"The nationality of my father is " + myFather.nationality; 
+</script>
+result - The nationality of my father is English
+<script>
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+Person.nationality = "English";
+
+var myFather = new Person("John", "Doe", 50, "blue");
+document.getElementById("demo").innerHTML =
+"The nationality of my father is " + myFather.nationality; 
+</script>
+result - The nationality of my father is undefined
+"
+Conclusion -> The JavaScript prototype property also allows us to add new methods to objects constructors:
+--------------------------------------------------------------------------
 What is Clousre
 How to differentiate between Object and Array
 How to Aysnc Process work
