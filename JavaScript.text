@@ -52,4 +52,51 @@ Question based on Multiple set time out
  object add
  use strict
  try catch
- 
+ ---------------------------------
+What is Call Apply and Bind?
+let name = {
+    firstname : "shubham",
+    lastname : "jindal",
+    printfullname :function(place , country , method){
+        console.log(this.firstname + " " + this.lastname + " " + place + " " + country + " using " + method); 
+    }
+}
+name.printfullname("agra" ,"india" ,"call");
+
+let name2 = {
+    firstname : "shubham1",
+    lastname : "jindal1",
+}
+ //function borrowing 
+name.printfullname.call(name2 , "jaipur",  "india" , "call");
+// in bind we pass individual parameter
+name.printfullname.apply(name2 , ["jaipur",  "india" , "apply"]);
+// in apply we pass second parameter as array
+copyofMethod = name.printfullname.bind(name2 , "jaipur",  "india" , "bind");
+// bind is using for copy of function for later use
+console.log(copyofMethod);
+copyofMethod();
+
+//---------------------------//
+console.log("after comment start");
+let name3 = {
+    firstname : "shubham after comment",
+    lastname : "jindal after comment",
+}
+printfullname2  = function(place , country , method){
+        console.log(this.firstname + " " + this.lastname + " " + place + " " + country + " using " + method); 
+    }
+printfullname2.call(name3, "agra" ,"india" ,"call");
+
+let name4 = {
+    firstname : "shubham1 after comment",
+    lastname : "jindal1 after comment",
+}
+ //function borrowing 
+printfullname2.call(name4 , "jaipur",  "india" , "call");
+printfullname2.apply(name4 , ["jaipur",  "india" , "apply"]);
+
+copyofMethod = printfullname2.bind(name4 , "jaipur",  "india" , "bind");
+console.log(copyofMethod);
+copyofMethod();
+--------------------------------
