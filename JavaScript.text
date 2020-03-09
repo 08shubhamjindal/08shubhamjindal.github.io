@@ -100,3 +100,36 @@ copyofMethod = printfullname2.bind(name4 , "jaipur",  "india" , "bind");
 console.log(copyofMethod);
 copyofMethod();
 --------------------------------
+Function Currying - 
+// Function Currying
+
+let multiply = function (x,y) {
+    console.log(x*y);
+}
+
+let multiplybytwo = multiply.bind(this, 2);
+multiplybytwo(5);
+
+let multiplybytwo2 = multiply.bind(this, 2 ,9);
+multiplybytwo2(5);
+
+let multiplybythree = multiply.bind(this, 3);
+multiplybythree(5);
+
+// function currying with clousre
+
+let multiplyClousre = function (x) {
+    return function(y) {
+        console.log(x*y)
+    }
+}
+
+let multiplybytwoClousre = multiplyClousre(2);
+multiplybytwoClousre(5);
+
+let multiplybytwo2Clousre =multiplyClousre(2 ,9);
+multiplybytwo2Clousre(5);
+
+let multiplybythreeClousre =multiplyClousre(3);
+multiplybythreeClousre(5);
+--------------------------------------------------------------------
