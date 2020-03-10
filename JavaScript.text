@@ -133,3 +133,91 @@ multiplybytwo2Clousre(5);
 let multiplybythreeClousre =multiplyClousre(3);
 multiplybythreeClousre(5);
 --------------------------------------------------------------------
+What is Event Capturing and Bubbling
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      div{
+        min-width : 100px;
+        min-height : 100px;
+        padding : 40px;
+        border : 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id = "grandparentbubbling">
+      <div id = "parentbubbling">
+        <div id = "childbubbling">
+        </div>
+      </div>
+    </div>
+    <div id = "grandparentcapturing">
+      <div id = "parentcapturing">
+        <div id = "childcapturing">
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      document.querySelector("#grandparentbubbling").addEventListener("click", ()=>{
+        console.log('hi grandparent bubbling');
+      }, false);
+      document.querySelector("#parentbubbling").addEventListener('click' , ()=>{
+        console.log('hi parent bubbling');
+      }, false);
+      document.querySelector("#childbubbling").addEventListener('click' , ()=>{
+        console.log('hi child bubbling');
+      }, false)
+
+      document.querySelector("#grandparentcapturing").addEventListener("click", ()=>{
+        console.log('hi grandparent capturing');
+      }, true);
+      document.querySelector("#parentcapturing").addEventListener('click' , (e)=>{
+        e.stopPropagation();
+        console.log('hi parent capturing');
+      }, true);
+      document.querySelector("#childcapturing").addEventListener('click' , ()=>{
+        console.log('hi child capturing');
+      }, true)
+      //stopPropagation concept
+
+    </script>
+  </body>
+</html>
+------------------------------------
+What is Event Delegation
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      div{
+        min-width : 100px;
+        min-height : 100px;
+        padding : 40px;
+        border : 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul id="categories">
+        <li id="laptops">laptops</li>
+        <li id="phone">phone</li>
+        <li id="charger">charger</li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+      document.querySelector("#categories").addEventListener("click" , (e)=>{
+        if(e.target.tagName==="LI"){
+           console.log(e.target.id);
+        }
+      });
+    </script>
+  </body>
+</html>
+------------------------------------------------------------------
